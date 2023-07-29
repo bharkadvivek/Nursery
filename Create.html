@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Create account</title>
+
+</head>
+
+<body style="background-color:aqua">
+    <form action="Accountcreated.html">
+        <h1>Create a new account</h1>
+
+        <marquee direction="left">
+            <img src="profile icon male.png" style="width:100px; height: 100px;" class="profilepic">
+        </marquee>
+        <marquee direction="right">
+            <img src="profile icon female.png" style="width:100px; height: 100px" class="profilepic">
+        </marquee>
+
+        <div class="createCSS">
+            Name:<input type="text" placeholder="Enter your full name" class="blocksize" autofocus="autofocus" required="required"> 
+            <br>
+            Mobile No:<input type="tel" pattern="[0-9]{10}" required placeholder="123-45-678" class="blocksize" required="required">
+            <br>
+            Emailid: <input type="email" placeholder="xyz@gmail.com" class="blocksize" required="required">
+            <br>
+            Date of Birth: <input type="date">
+            <br><br>
+            <fieldset style="display:inline;">
+                <legend>Select a gender: </legend>
+                <input type="radio" id="yes" name="choose" value="yes" />
+                <label for="yes">M</label>
+            
+                <input type="radio" id="no" name="choose" value="no" />
+                <label for="no">F</label>
+                <script src="radio.js"></script>
+
+            </fieldset>
+            <br>
+            Create a new password: <input type="password" placeholder="*********" class="blocksize" required="required">
+            <br>
+            Confirm your password: <input type="password" placeholder="**********" class="blocksize" required="required">
+            <br><br>
+            <button>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
